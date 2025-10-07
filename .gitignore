@@ -1,0 +1,8 @@
+.DS_Store
+*.pyc
+__pycache__/
+*.log
+*/venv/*
+*/rembg-venv/*
+.env
+node_modules/
