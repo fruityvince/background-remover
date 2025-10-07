@@ -8,7 +8,8 @@ export interface ProcessingResponse {
 }
 
 export class ApiService {
-  static async processImage(file: File): Promise<ProcessingResponse> {
+  // static async processImage(file: File): Promise<ProcessingResponse> {
+  static async processImage(file: File): Promise<Blob> {
     const formData = new FormData();
     formData.append('file', file);
 
@@ -21,9 +22,9 @@ export class ApiService {
       throw new Error(`Failed to process image: ${response.statusText}`);
     }
 
-    return response.json();
+    return response.blob();
+    // return response.json();
   }
-
   static getProcessedImageUrl(imageId: string): string {
     return `${API_BASE_URL}/download/${imageId}`;
   }

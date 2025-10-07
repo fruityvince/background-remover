@@ -1,7 +1,11 @@
 import { useState, useRef } from 'react'
+
 import { DragDropArea } from './components/DragDropArea'
 import { ProcessedImage } from './components/ProcessedImage'
+// import { BackgroundRemover } from './components/BackgroundRemover'
+
 import { useImageProcessing } from './hooks/useImageProcessing'
+// import { useBackgroundRemoval } from './hooks/useBackgroundRemoval'
 
 function App() {
   const [uploadedFile, setUploadedFile] = useState<File | null>(null)
@@ -9,6 +13,7 @@ function App() {
   const [validImageProvided, setValidImageProvided] = useState(false)
   
   const { isProcessing, processedImageUrl, error, processImage, reset } = useImageProcessing()
+  // const { processImage, downloadImage, reset, previewUrl, isLoading, doneError } = useBackgroundRemoval()
 
 
   const handleFileUpload = (file: File) => {
@@ -75,6 +80,7 @@ function App() {
         {processedImageUrl && (
           <ProcessedImage processedImageUrl={processedImageUrl} />
         )}
+
       </div>
     </div>
   )
