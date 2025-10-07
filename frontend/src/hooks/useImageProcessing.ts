@@ -15,12 +15,6 @@ export const useImageProcessing = () => {
       const imageBlob = await ApiService.processImage(file)  // error here
       const imageUrl = URL.createObjectURL(imageBlob)
       setProcessedImageUrl(imageUrl)
-
-      // const response = await ApiService.processImage(file)  // error here
-      // console.log('Image processed successfully:', response)
-      // const processedUrl = ApiService.getProcessedImageUrl(response.image_id)
-      // console.log('Processed image URL:', processedUrl)
-      // setProcessedImageUrl(processedUrl)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'useImageProcessing::Failed to process image')
     } finally {
