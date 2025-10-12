@@ -2,6 +2,7 @@ import { useState, useRef } from 'react'
 
 import { DragDropArea } from './components/DragDropArea'
 import { ProcessedImage } from './components/ProcessedImage'
+import { Header } from './components/Header'
 
 import { useImageProcessing } from './hooks/useImageProcessing'
 
@@ -39,6 +40,9 @@ function App() {
 
   return (
     <div className="min-h-screen bg-base-100">
+      {/* Header */}
+      <Header />
+
       <div className="max-w-4xl mx-auto p-8">
         <div className="text-center mb-8">
           <p className="text-base-content/70 text-lg">

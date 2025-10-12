@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/fruity/Documents/_dev/saas/background-remover/backend/venv"
+set -gx VIRTUAL_ENV "/Users/fruity/Documents/_dev/saas/background-remover-nextjs/backend/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

@@ -1,4 +1,4 @@
-#!/Users/fruity/Documents/_dev/saas/background-remover/backend/venv/bin/python
+#!/Users/fruity/Documents/_dev/saas/background-remover-nextjs/backend/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
