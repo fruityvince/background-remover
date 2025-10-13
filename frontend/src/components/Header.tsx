@@ -25,18 +25,6 @@ export const Header = () => {
   `
   return (
 
-    // <div className="flex w-full flex-col">
-    //   <nav className="top-menu">
-    //     <ul className="flex space-x-4">
-    //       <li className={style}><a href="/about">About</a></li>
-    //       <li className={style}><a href="/assets">Assets</a></li>
-    //       <li className={style}><a href="/plan">Plan</a></li>
-    //       <li className={style}><a href="/view">View</a></li>
-    //     </ul>
-    //   </nav>
-    //   <div className="divider divider-secondary"></div>
-    // </div>
-
     <div className="bg-base-200 shadow-md p-4 mb-6">
       <div className="navbar bg-base-200 shadow-md p-4 mb-6">
         <div className="flex-1">
@@ -44,8 +32,8 @@ export const Header = () => {
         </div>
         <div className="flex-none gap-2">
           <a href="/about" className="btn btn-ghost">About</a>
-          <a className="btn btn-ghost">API</a>
-          <a className="btn btn-ghost">Contact</a>
+          <a href="/api" className="btn btn-ghost">API</a>
+          <a href="/pricing" className="btn btn-ghost">Pricing</a>
           <button className="btn btn-primary">Login</button>
         </div>
       </div>
