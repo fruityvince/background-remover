@@ -1,9 +1,11 @@
+"""
+uvicorn app.main:app --reload --port 8000
+"""
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi.middleware.cors import CORSMiddleware
 from .api.endpoints import router as api_router
-from .core.config import settings
 
 app = FastAPI(title="Background Removal Service", version="1.0.0")
 
